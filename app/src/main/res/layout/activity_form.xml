@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Codigo (solo numeros)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Agregar" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Eliminar" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tablaDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:stretchColumns="*">
+
+            <TableRow android:background="#DDDDDD">
+                <TextView
+                    android:text="Codigo"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:text="Nombre"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:text="Edad"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
